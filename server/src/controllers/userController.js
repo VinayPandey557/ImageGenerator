@@ -117,7 +117,7 @@ export const loginUser = async (req, res) => {
 export const userCredits = async (req, res) => {
    try {
     const userId = req.user._id;
-    console.log('userrrId', userId);
+  
 
     const  user = await User.findById(userId)
     if(!user) {
